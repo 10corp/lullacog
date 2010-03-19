@@ -39,7 +39,6 @@ function lullacog_preprocess_page(&$vars, $hook) {
   global $theme;
   global $user;
 
-  _lullacog_add_css($vars);
   _lullacog_add_body_classes($vars);
 
   // Add some footer links to the footer.
