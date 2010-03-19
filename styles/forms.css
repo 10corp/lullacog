@@ -1,7 +1,4 @@
-/* @override 
-	http://dmgatlanta-com.webgearapp.com/sites/all/themes/webgear/cog/styles/forms.css?V
-	http://aurora.webgear/sites/all/themes/webgear/cog/styles/forms.css?C
-*/
+/* @override http://lullabot/sites/all/themes/lullabot/lullacog/styles/forms.css?Z */
 
 /* @group Form Elements */
 
@@ -152,13 +149,13 @@ html.js fieldset.collapsed {
 
 html.js fieldset.collapsible legend a {
 	background: none;
+	text-decoration: none;
 	padding-left: 0;
 	padding-right: 0;
 }
 
 fieldset {
 	padding-top: 36px;
-	position: relative !important;
 }
 
 fieldset legend {
@@ -167,14 +164,7 @@ fieldset legend {
 	font: 1.2em HelveticaNeue, Helvetica;
 	text-transform: uppercase !important;
 	letter-spacing: -1px;
-	position: absolute;
-	top: 16px;
-	left: 24px !important;
-	display: block !important;
-}
-
-fieldset legend span.legend {
-	display: block !important;
+	line-height: 1em;
 }
 
 fieldset legend.collapse-processed {
