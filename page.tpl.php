@@ -123,7 +123,7 @@
           <?php endif; ?>
 
           <div id="primary">
-            <?php print $primary_links_markup; ?>
+            <?php print theme('links', $primary_links); ?>
           </div> <!-- /#primary -->
 
           <?php print $navbar; ?>
