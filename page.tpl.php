@@ -24,14 +24,6 @@
             <?php print $site_name; ?>
           </h1>
 
-          <?php if ($toggle_name): ?>
-            <h1 id="site-name-visible">
-              <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home">
-                <?php print $site_name; ?>
-              </a>
-            </h1>
-          <?php endif; ?>
-
           <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
