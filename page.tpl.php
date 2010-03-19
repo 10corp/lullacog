@@ -174,5 +174,4 @@
   <?php print $closure; ?>
 
 </body>
-<?php if (!empty($admin)) print $admin; ?>
 </html>
