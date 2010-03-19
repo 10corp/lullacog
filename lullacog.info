@@ -1,0 +1,82 @@
+; $Id$
+
+name        = LullaCog
+description = Scaffolding theme for Lullabot.
+core        = 6.x
+base theme  = zen
+
+; ------------------------------
+;           Stylesheets
+; ------------------------------
+stylesheets[all][] = styles/reset.css
+stylesheets[all][] = styles/cog.css
+stylesheets[all][] = styles/messages.css
+stylesheets[screen][] = styles/forms.css
+;stylesheets[screen][] = styles/regions.css
+stylesheets[screen][] = styles/tables.css
+stylesheets[screen][] = styles/tabs.css
+stylesheets[screen][] = styles/vertical_tabs.css
+stylesheets[print][]  = styles/print.css
+
+; ------------------------------
+;      Disable Stylesheets
+; ------------------------------
+stylesheets[all][]   = system-menus.css
+stylesheets[all][]   = vertical_tabs.css
+stylesheets[all][]   = html-elements.css
+stylesheets[all][]   = block-editing.css
+stylesheets[all][]   = wireframes.css
+stylesheets[all][]   = zen.css
+stylesheets[all][]   = tabs.css
+stylesheets[all][]   = messages.css
+stylesheets[print][] = print.css
+conditional-stylesheets[if IE][all][] = ie.css
+
+; ------------------------------
+;            Scripts
+; ------------------------------
+scripts[] = scripts/lullacog.js
+
+; ------------------------------
+;            Regions
+; ------------------------------
+regions[header]         = Header
+regions[top]            = Top
+regions[navbar]         = Navigation bar
+regions[content_top]    = Content Top
+regions[right]          = Sidebar
+regions[left]           = Secondary Sidebar
+regions[content_bottom] = Content Bottom
+regions[bottom]         = Bottom
+regions[footer]         = Footer
+regions[closure_region] = Closure
+
+; ------------------------------
+;           Features
+; ------------------------------
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+; ------------------------------
+;         Zen Settings
+; ------------------------------
+settings[zen_block_editing]        = 1
+settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb_separator] = ' Ý '
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 1
+settings[zen_breadcrumb_title]     = 0
+settings[zen_rebuild_registry]     = 1
+settings[zen_wireframes]           = 0
+
+; Leave this here so admins will be notified when a new version of Zen is available.
+; Information added by drupal.org packaging script on 2009-11-10
+version = "6.x-1.1"
+core = "6.x"
+project = "zen"
+datestamp = "1257845814"

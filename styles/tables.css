@@ -1,0 +1,116 @@
+table.views-entry {
+	margin-top: 12px;
+}
+
+form table,
+table.sticky-table {
+	width: 100%;
+}
+
+form table th,
+table.sticky-table th {
+	color: black;
+	text-transform: uppercase;
+	font: bold 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-right: 8px;
+	text-align: left;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	border-bottom-style: solid !important;
+}
+
+form table tr.odd,
+table.sticky-table tr.odd {
+	background-color: #f2f2f2;
+}
+
+form table tr.even,
+table.sticky-table tr.even {
+	background-color: white;
+}
+
+form table tr td,
+table.sticky-table tr td {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 12px;
+	text-align: left;
+}
+
+form table tr td.active,
+table.sticky-table tr td.active {
+	background-color: transparent;
+	color: #3c3c3c;
+}
+
+body.not-logged-in div.node table {
+	width: 100%;
+	background-color: white;
+}
+
+body.not-logged-in div.node table thead {
+	font-size: 18px;
+	color: black;
+	letter-spacing: -1px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+body.not-logged-in div.node table thead tr td {
+	border-bottom-width: 3px;
+}
+
+body.not-logged-in div.node table tbody {
+	
+}
+
+body.not-logged-in div.node table th {
+	color: black;
+}
+
+body.not-logged-in div.node table tr {
+	
+}
+
+body.not-logged-in div.node table td,
+body.not-logged-in div.node table tr th {
+	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	padding: 9px;
+	border: 1px solid #bcbcbc;
+}
+
+body.not-logged-in div.node table td.highlight,
+body.not-logged-in div.node table tr.highlight td {
+	background-color: #f3f3f3;
+	color: black;
+}
+
+body.not-logged-in div.node table tr.odd td {
+	
+}
+
+body.not-logged-in div.node table tr.even td {
+	
+}
+
+div.node-feature-nodes-table {
+	border: 1px solid #cacaca;
+	padding: 18px;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	border-bottom-color: #a3a3a3;
+	background-color: white;
+}
+
+.node-feature-nodes-table h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0 0 14px;
+	color: white;
+	background: url(../images/bg_tabs.gif) repeat-x 0 bottom;
+	border: 1px solid #525252;
+	line-height: 33px;
+	font-weight: normal;
+	font-style: normal;
+	padding-left: 9px;
+}

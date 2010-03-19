@@ -1,0 +1,394 @@
+/* @override http://dmgatlanta-com.webgearapp.com/sites/all/themes/webgear/cog/styles/cog.css?V */
+
+/* @group Miscellaneous */
+
+span.read-more-link {
+	display: block;
+	margin-bottom: 4px;
+}
+
+span.read-more-link a {
+	
+}
+
+li.private_icon {
+	display: none !important;
+}
+
+div.description {
+	font-style: italic;
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 4px;
+	color: #7e7e7e;
+}
+
+.resizable-textarea {
+	width: auto;
+	border-color: #cecece;
+}
+
+.resizable-textarea span {
+	width: 100%;
+}
+
+span.field-suffix {
+	font-size: 12px;
+	font-style: italic;
+	display: block;
+}
+
+h1#site-name {
+	display: none;
+}
+
+/* CCK link fields */
+
+div.link-field-column {
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+html.js input.form-autocomplete {
+	background-repeat: no-repeat;
+	background-position: 100% 8px;
+}
+
+html.js input.throbbing {
+	background-position: 100% -12px; /* LTR */
+}
+
+/* Messages */
+
+div.messages,
+div.warning {
+	margin: 12px 0;
+}
+
+div#content-bottom {
+	clear: both;
+}
+
+#content-area-inner ul.pager {
+	max-width: 900px;
+}
+
+/* @end */
+
+/* @group Highslide */
+
+a.highslide {
+	position: relative;
+}
+
+div.highslide-caption {
+	border-top: 1px solid #cacaca;
+	background-color: #dbdbdb;
+}
+
+a.highslide span.zoom,
+a.highslide span.video {
+	position: absolute;
+	display: block;
+	left: 14px;
+	bottom: 14px;
+	padding: 0;
+	margin: 0;
+	background: transparent url(../images/zoom.png) no-repeat 0 0;
+	width: 20px;
+	height: 19px;
+}
+
+a.highslide span.video {
+  width: 138px;
+  height: 44px;
+  background-image: url(../images/video.png);
+}
+
+img.video {
+	width: auto !important;
+}
+
+/* @end */
+
+/* @group Views */
+
+div.views-row {
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #bcbcbc;
+}
+
+div.views-row-last {
+	border-bottom-style: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+/* @end */
+
+/* @group Widgets */
+
+body.front #sidebar-right img.imagecache-sidebar_borderless_default,
+body.not-front #sidebar-right img.imagecache-sidebar_borderless_default {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: 0;
+}
+
+#sidebar-right .block .views-field-title {
+	margin-top: 5px;
+}
+
+.block .field-field-links div.odd,
+.block .field-field-links div.even,
+.block .field-field-files div.filefield-file {
+	border-bottom: 1px dotted #bebebe;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+div.field-field-files {
+	margin: 0;
+	padding: 0;
+}
+
+.field-field-files .filefield-icon img {
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: transparent !important;
+	border-style: none !important;
+}
+
+#sidebar-right .block ul {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar-right .block ul li {
+	margin: 0;
+	padding: 6px 0;
+	list-style-type: none;
+}
+
+#sidebar-right div.block {
+	margin-bottom: 24px;
+}
+
+.right {
+	float: right;
+}
+
+div.filefield-icon img {
+	padding: 0 !important;
+	background-color: transparent !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+#sidebar-right .block-addthis img,
+body.top #sidebar-right .block .node-type-embed img {
+	padding: 0;
+	background-color: transparent;
+	border-style: none;
+	width: auto;
+}
+
+/* @end */
+
+/* @group Breadcrumbs */
+
+body.webgear-admin.section-admin div#breadcrumb_wrap {
+	display: none;
+}
+
+body.not-logged-in div#breadcrumb_wrap {
+	display: none;
+}
+
+body.admin-menu div#breadcrumb_wrap {
+	display: block !important;
+}
+
+/* @end */
+
+/* @group Lists */
+
+#content-area-inner ul,
+#content-area-inner ol,
+#content-area-inner dl {
+	margin: 8px 0;
+	padding: 0;
+}
+
+#content-area-inner ul li,
+#content-area-inner ol li,
+#content-area-inner dl dd {
+	margin-left: 18px;
+	margin-bottom: 8px;
+}
+
+#content-area-inner ul.tabs {
+	max-width: 1200px;
+}
+
+/* @end */
+
+/* @group User section */
+
+body.section-users .field-field-name-first .field-items div.field-item,
+body.section-users .field-field-name-first div.field-items,
+body.section-users div.field-field-name-first,
+body.section-users .field-field-name-last .field-items div.field-item,
+body.section-users .field-field-name-last div.field-items,
+body.section-users div.field-field-name-last {
+	display: inline;
+}
+
+body.section-users h3 {
+	background-color: #eaeaea;
+	padding: 12px;
+	margin-bottom: 14px;
+}
+
+body.section-users dl dt {
+	color: #313131;
+}
+
+body.section-users dl dd {
+	margin: 0 0 12px !important;
+}
+
+/* @end */
+
+/* @group Other */
+
+#content-inner .hide {
+	display: none !important;
+}
+
+body.section-users #content-area-inner div.profile dl table.sticky-enabled.sticky-table tr.even {
+	display: none;
+}
+
+#sidebar-right div.node-type-text img {
+	background-color: transparent;
+	border-style: none;
+	padding: 0;
+}
+
+#sidebar-right div.node-type-text img.border {
+	background-color: #e3e3e3;
+	border-style: none;
+	padding: 6px;
+}
+
+/* @end */
+
+/* @group MailChimp */
+
+#mc-embedded-subscribe-form fieldset {
+	padding: 0;
+	background-color: transparent;
+	background-image: none;
+	border-style: none;
+}
+
+#mc-embedded-subscribe-form label {
+	display: block;
+	margin: 10px 0 2px;
+}
+
+#mc-embedded-subscribe-form input.required {
+	font: 14px/18px Georgia, "Times New Roman", Times, serif;
+	color: #3e3e3e;
+	padding: 6px;
+	max-width: 400px;
+	border: 1px solid #cecece;
+	border-bottom-color: #a7a7a7;
+	width: auto;
+}
+
+#mc-embedded-subscribe-form .input-group ul li {
+	padding: 2px 0;
+}
+
+#mc-embedded-subscribe-form .input-group ul li label {
+	display: inline;
+	color: #646464;
+	margin: 0 0 0 6px;
+}
+
+#mc-embedded-subscribe-form input#mc-embedded-subscribe {
+	clear: both;
+	margin-top: 8px;
+}
+
+/* @end */
+
+/* @group IMCE */
+
+div#imce-content a#help-box {
+	display: none;
+}
+
+div#imce-content div#op-items {
+}
+
+div#imce-content div#op-items ul.tabs {
+	padding: 0 12px;
+	border: 1px solid #cecece;
+	max-width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div#imce-content div#op-items ul.tabs li {
+	margin: 0 6px 0 0;
+	padding: 0;
+	float: none;
+}
+
+div#imce-content ul.tabs li a {
+	padding: 9px 9px 0;
+	background-position: 0 bottom;
+}
+
+div#imce-content form#imce-upload-form div.form-item,
+div#imce-content form#imce-upload-form div.form-checkboxes,
+div#imce-content div#op-content-thumb div.form-checkboxes {
+	background-image: none;
+	background-color: transparent;
+	border-style: none;
+	padding: 0;
+}
+
+div#imce-content form#imce-upload-form {
+	margin: 0 !important;
+}
+
+#content-area-inner dl.search-results dd:first-child {
+	
+}
+
+#content-area-inner dl.search-results dt.title a {
+	font-weight: bold;
+}
+
+#content-area-inner ul.pager {
+	margin-top: 18px !important;
+}
+
+/* @end */
+
+/* @group MogoConnect */
+
+div.view-mogo-users div.view-content {
+  overflow: auto;
+  height: 400px;
+}
+
+/* @end */
+

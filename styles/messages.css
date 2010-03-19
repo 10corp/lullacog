@@ -1,0 +1,71 @@
+/* @override http://webgear/sites/all/themes/webgear/cog/styles/messages.css?o */
+
+/* Important messages (status, warning, and error) for the user */
+div.messages, 
+div.status,
+div.warning,
+div.error {
+	min-height: 21px;
+	margin: 18px 0;
+	border: 3px solid #9fdd9f;
+	padding: 10px 15px 15px 45px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #d8ffd8;
+	background-image: url(/sites/all/themes/zen/zen/images/messages-status.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	font-family: "Lucida Grande";
+}
+
+#content-header div.messages ul,
+#content-header div.messages ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#content-header div.messages ul li {
+	margin-bottom: 12px;
+}
+
+#content-header div.messages ul li:last-child {
+	margin-bottom: 0;
+}
+
+/* Normal priority messages */
+#content-header div.status {
+	border-color: #9fdd9f;
+	color: #436943;
+}
+
+/* Medium priority messages */
+#content-header div.warning {
+	border-color: #ffe478;
+	background-image: url(/sites/all/themes/zen/zen/images/messages-warning.png);
+}
+
+#content-header div.warning,
+tr.warning {
+	color: #705900; /* Drupal core uses #220 */
+    background-color: #ffc;
+}
+
+/* High priority messages. See also the .error declaration below. */
+#content-header div.error {
+	/* border: 1px solid #d77; */ 
+	/* Drupal core uses: 1px solid #d77 */
+    border-color: #cb9e9e;
+	background-image: url(/sites/all/themes/zen/zen/images/messages-error.png);
+}
+
+#content-header div.error,
+tr.error {
+	color: #900; /* Drupal core uses #200 */
+    background-color: #fee;
+}
+
+div.messages ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
