@@ -133,39 +133,37 @@
 
     </div></div> <!-- /#main-inner, /#main -->
 
-    <?php if ($footer or $footer_message or $footer_links or $follow_site): ?>
-      <div id="footer"><div id="footer-inner" class="region region-footer">
+    <div id="footer-wrap"><div id="footer"><div id="footer-inner" class="region region-footer">
 
-        <div class="clear-block">
-          <?php if ($primary_links): ?>
-            <div id="primary-footer">
-              <?php print theme('links', $primary_links); ?>
-            </div> <!-- /#primary -->
+      <div class="clear-block">
+        <?php if ($primary_links): ?>
+          <div id="primary-footer">
+            <?php print theme('links', $primary_links); ?>
+          </div> <!-- /#primary -->
+        <?php endif; ?>
+
+        <div id="footer-right-content">
+          <?php if ($follow_site): ?>
+            <div id="follow-site"><?php print $follow_site; ?></div>
           <?php endif; ?>
 
-          <div id="footer-right-content">
-            <?php if ($follow_site): ?>
-              <div id="follow-site"><?php print $follow_site; ?></div>
-            <?php endif; ?>
+          <?php if ($footer_message): ?>
+            <div id="footer-message"><?php print $footer_message; ?></div>
+          <?php endif; ?>
 
-            <?php if ($footer_message): ?>
-              <div id="footer-message"><?php print $footer_message; ?></div>
-            <?php endif; ?>
+          <?php if ($footer_links): ?>
+            <div id="footer-links">
+              <?php print theme('links', $footer_links); ?>
+            </div> <!-- /#div -->
+          <?php endif; ?>
 
-            <?php if ($footer_links): ?>
-              <div id="footer-links">
-                <?php print theme('links', $footer_links); ?>
-              </div> <!-- /#div -->
-            <?php endif; ?>
+          <div id="copyright"><?php print $copyright; ?></div>
+        </div> <!-- /#footer-right-content -->
+      </div>
 
-            <div id="copyright"><?php print $copyright; ?></div>
-          </div> <!-- /#footer-right-content -->
-        </div>
+      <?php print $footer; ?>
 
-        <?php print $footer; ?>
-
-      </div></div> <!-- /#footer-inner, /#footer -->
-    <?php endif; ?>
+    </div></div></div> <!-- /#footer-inner, /#footer, /#footer-wrap -->
 
   </div></div> <!-- /#page-inner, /#page -->
 
