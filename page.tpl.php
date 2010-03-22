@@ -126,6 +126,12 @@
             <?php print theme('links', $primary_links); ?>
           </div> <!-- /#primary -->
 
+          <?php if ($primary_links_sub): ?>
+            <div id="primary-sub">
+              <?php print theme('links', $primary_links_sub); ?>
+            </div> <!-- /#primary-sub -->
+          <?php endif; ?>
+
           <?php print $navbar; ?>
 
         </div></div> <!-- /#navbar-inner, /#navbar -->
