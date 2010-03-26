@@ -8,7 +8,7 @@
   <?php print $scripts; ?>
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
-<body class="<?php print $body_classes; ?>">
+<body class="<?php print $body_classes; ?>"><?php if (!empty($admin)) print $admin; ?>
 
   <div id="page"><div id="page-inner">
     <div id="header"><div id="header-inner" class="clear-block">
