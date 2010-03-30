@@ -214,28 +214,6 @@ body.admin-menu div#breadcrumb_wrap {
 
 /* @end */
 
-/* @group Lists */
-
-#content-area-inner ul,
-#content-area-inner ol,
-#content-area-inner dl {
-	margin: 8px 0;
-	padding: 0;
-}
-
-#content-area-inner ul li,
-#content-area-inner ol li,
-#content-area-inner dl dd {
-	margin-left: 18px;
-	margin-bottom: 8px;
-}
-
-#content-area-inner ul.tabs {
-	max-width: 1200px;
-}
-
-/* @end */
-
 /* @group User section */
 
 body.section-users .field-field-name-first .field-items div.field-item,
