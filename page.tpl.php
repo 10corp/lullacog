@@ -62,6 +62,12 @@
         <div id="content-area" class="clear-block">
 
           <div id="content-area-inner">
+            <?php if ($content_top): ?>
+              <div id="content-top" class="region region-content_top"><div id="content-top-inner">
+                <?php print $content_top; ?>
+              </div></div> <!-- /#content-top-inner, /#content-top -->
+            <?php endif; ?>
+
             <?php if ($title or $tabs or $help or $messages): ?>
               <div id="content-header">
                 <?php print $messages; ?>
@@ -73,13 +79,6 @@
                 <?php endif; ?>
               </div> <!-- /#content-header -->
             <?php endif; ?>
-
-            <?php if ($content_top): ?>
-              <div id="content-top" class="region region-content_top">
-                <?php print $content_top; ?>
-              </div> <!-- /#content-top -->
-            <?php endif; ?>
-
             <?php print $content; ?>
 
             <?php if ($content_bottom): ?>
