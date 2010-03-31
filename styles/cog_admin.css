@@ -1,0 +1,38 @@
+/* @override http://lullabot/sites/all/themes/lullabot/lullacog/styles/cog_admin.css?b */
+
+div.block div.edit {
+	position: absolute;
+	display: none;
+}
+
+div.block:hover div.edit {
+	display: block;
+}
+
+div.views-admin-links ul {
+	position: absolute;
+}
+
+div.views-admin-links li {
+	display: inline;
+}
+
+div.block div.edit,
+div.views-admin-links ul {
+	background-color: rgba(0, 0, 0, .5);
+	padding: 2px 8px !important;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+div.block div.edit a,
+div.views-admin-links a {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+div.views-admin-links:hover a {
+	color: #fff !important;
+}
