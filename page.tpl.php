@@ -39,10 +39,16 @@
 
     </div></div> <!-- /#header-inner, /#header -->
 
-    <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box or $primary_links or $secondary_links or $navbar) { print ' with-navbar'; } ?>">
+    <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box or $primary_links or $secondary_links or $navbar) { print ' with-navbar'; } if ($primary_links_sub) ( print ' with-sublinks' ) ?>">
 
-      <?php if ($top): ?>
+      <?php if ($top or ($section_title and $section_subtitle)): ?>
         <div id="top" class="region region-top">
+          <?php if ($section_title and $section_subtitle): ?>
+            <div id="section-data">
+              <h1 id="section-title"><?php print $section_title; ?></h1>
+              <h2 id="section-subtitle"><?php print $section_subtitle; ?></h2>
+            </div> <!-- /#section-data -->
+          <?php endif; ?>
           <?php print $top; ?>
         </div> <!-- /#top -->
       <?php endif; ?>
