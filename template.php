@@ -21,6 +21,11 @@ function lullacog_init() {
     drupal_add_css($file, 'theme');
   }
 
+  if (drupal_is_front_page()) {
+    $file = $theme_path ."/styles/front.css";
+    drupal_add_css($file, 'theme');
+  }
+
   // Add follow module css, since we don't use the block.
   if (function_exists('follow_links_load')) {
     drupal_add_css(drupal_get_path('module', 'follow') .'/follow.css');
