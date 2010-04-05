@@ -52,7 +52,13 @@
           <?php print $top; ?>
         </div></div> <!-- /#top-inner, /#top -->
       <?php endif; ?>
-      
+
+      <?php if ($is_front and $pillars): ?>
+        <div id="pillars" class="region region-pillars clear-block"><div id="pillars-inner">
+          <?php print $pillars; ?>
+        </div></div> <!-- /#pillars-inner, /#pillars -->
+      <?php endif; ?>
+
       <div id="content"><div id="content-inner">
 
         <?php if ($mission): ?>
