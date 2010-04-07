@@ -133,6 +133,12 @@
             </div> <!-- /#secondary -->
           <?php endif; ?>
 
+          <?php if ($search_box): ?>
+            <div id="search-wrapper">
+              <?php print $search_box; ?>
+            </div> <!-- /#search-box -->
+          <?php endif; ?>
+
           <div id="primary">
             <?php print theme('links', $primary_links); ?>
           </div> <!-- /#primary -->
