@@ -1,9 +1,15 @@
 /* @override http://dmgatlanta-com.webgearapp.com/sites/all/themes/webgear/cog/styles/cog.css?V */
 
 /* @group Miscellaneous */
+div.more-link {
+  text-align: left;
+}
 
-div.read-more a {
-  
+div.more-link a {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 9px;
+  background: url(../images/icon-arrow-right.png) no-repeat 0 45%;
 }
 
 span.read-more-link {
