@@ -52,6 +52,27 @@ h1#site-name {
   display: none;
 }
 
+/* Generic node theming */
+.meta {
+  margin: 1em 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.meta span {
+  padding: 0 7px;
+  border-left: 1px solid #C4C5C7;
+}
+
+.meta span.username {
+  padding-left: 0;
+  border-left: none;
+  font-weight: bold;
+}
+.meta span.submitted {
+  font-weight: bold;
+}
+
 /* CCK link fields */
 
 div.link-field-column {
