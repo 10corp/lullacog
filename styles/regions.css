@@ -3,80 +3,80 @@
 /* @group Block/Region Editing */
 
 body.webgear-admin .block-inner .node div.content {
-	margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 body.webgear-admin .block-inner .node ul.links,
 body.webgear-admin .node-inner ul.links {
-	display: block;
-	border-right-width: 0;
-	border-left-width: 0;
-	margin: 0;
-	clear: both;
-	background-position: 0;
-	padding: 0 !important;
-	max-width: 1000px !important;
+  display: block;
+  border-right-width: 0;
+  border-left-width: 0;
+  margin: 0;
+  clear: both;
+  background-position: 0;
+  padding: 0 !important;
+  max-width: 1000px !important;
 }
 
 body.webgear-admin .node ul.links li {
-	float: left;
-	padding: 0 !important;
-	margin-right: 8px;
+  float: left;
+  padding: 0 !important;
+  margin-right: 8px;
 }
 
 body.webgear-admin .node ul.links li a {
-	display: block;
-	padding-right: 8px;
+  display: block;
+  padding-right: 8px;
 }
 
 body.webgear-admin .block-inner .node ul.links li.first a {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body.webgear-admin .block-inner .node ul.links li a,
 body.webgear-admin #content-top .node-inner ul.links li a,
 body.webgear-admin #content-bottom .node-inner ul.links li a,
 body.webgear-admin #sidebar-right .node-inner ul.links li a {
-	line-height: 28px;
-	display: block;
-	color: white;
-	font-size: 11px;
-	margin: 0;
-	padding: 0 8px !important;
-	text-transform: uppercase;
+  line-height: 28px;
+  display: block;
+  color: white;
+  font-size: 11px;
+  margin: 0;
+  padding: 0 8px !important;
+  text-transform: uppercase;
 }
 
 body.webgear-admin .block-inner .node ul.links li,
 body.webgear-admin #content-top .node-inner ul.links li,
 body.webgear-admin #content-bottom .node-inner ul.links li,
 body.webgear-admin #sidebar-right .node-inner ul.links li {
-	padding: 0 !important;
-	border: 1px solid #525252;
-	background: #6e6e6e url(../images/bg_tabs.gif) repeat-x 0 bottom;
-	text-align: left;
-	display: block;
-	margin: 0 6px 0 0 !important;
+  padding: 0 !important;
+  border: 1px solid #525252;
+  background: #6e6e6e url(../images/bg_tabs.gif) repeat-x 0 bottom;
+  text-align: left;
+  display: block;
+  margin: 0 6px 0 0 !important;
 }
 
 body.webgear-admin .node-inner .node-feature-nodes-table ul.links li {
-	background-image: none;
-	border-style: none;
-	padding: 0 !important;
+  background-image: none;
+  border-style: none;
+  padding: 0 !important;
 }
 
 body.webgear-admin .block-inner .node ul.links li:hover,
 body.webgear-admin .node-inner ul.links li:hover {
-	background: url(../images/bg_tabs-hover.gif) repeat-x 0 bottom;
+  background: url(../images/bg_tabs-hover.gif) repeat-x 0 bottom;
 }
 
 body.webgear-admin #content-area .node-inner div.node-teaser-nodes-table ul.links li,
 #content-area div.node-teaser-nodes-table a img,
 #content-area div.node-teaser-nodes-table a:hover img {
-	padding: 0;
-	margin: 0;
-	background: none;
-	border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
 }
 
 /* @end */
@@ -107,13 +107,13 @@ body.webgear-admin div#sidebar-right:hover {
 } */
 
 div.region-manager-menu {
-	margin-top: 18px;
-	margin-bottom: 18px;
-	clear: both;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  clear: both;
 }
 
 body.region-manager-hide div.region-manager-menu {
-	display: none;
+  display: none;
 }
 
 body.webgear-admin div#content-top:hover,
@@ -121,8 +121,8 @@ body.webgear-admin div#content-bottom:hover,
 body.webgear-admin div#sidebar-right:hover,
 body.webgear-admin div#sidebar-right-inner:hover,
 body.webgear-admin div#sidebar-right-wrapper:hover {
-	background-color: #ffc;
-	background-image: none;
+  background-color: #ffc;
+  background-image: none;
 }
 
 /* @end */
