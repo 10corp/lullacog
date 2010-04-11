@@ -216,7 +216,7 @@ function lullacog_node_admin_nodes($form) {
  * @ingroup themeable
  */
 function lullacog_node_submitted($node, $date = NULL) {
-  $date = is_null($date) ? format_date($node->created, 'short') : $date;
+  $date = is_null($date) ? format_date($node->created, 'small') : $date;
 
   $output = '';
   $output .= '<span class="username">'. t('By !username', array('!username' => theme('username', $node))) .'</span>';
