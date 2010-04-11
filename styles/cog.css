@@ -110,6 +110,28 @@ img.video {
 	width: auto !important;
 }
 
+.node-unpublished {
+  position: relative;
+}
+
+.node-unpublished .node-inner div {
+  z-index: 10;
+  position: relative;
+}
+
+.node-unpublished .node-inner div.unpublished {
+  z-index: 0;
+  position: relative;
+  font-size: 80px;
+  font-weight: bold;
+  color: #EDEDED;
+  font-family: Impact,"Arial Black",serif;
+  text-transform: uppercase;
+  top: 30px;
+  left: 20px;
+  height: 1px;
+}
+
 /* @end */
 
 /* @group Views */
