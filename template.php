@@ -72,7 +72,12 @@ function lullacog_preprocess_page(&$vars, $hook) {
  * Adds some conditional body classes.
  */
 function _lullacog_add_body_classes(&$vars) {
-    // Add content-top body class.
+  // Add node body class if we're on a page node.
+  if ($vars['node']) {
+    $vars['body_classes'] .= ' node-page';
+  }
+
+  // Add content-top body class.
   if ($vars['content_top']) {
     $vars['body_classes'] .= ' content-top';
   }
