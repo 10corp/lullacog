@@ -157,9 +157,9 @@
     </div></div> <!-- /#main-inner, /#main -->
 
     <div id="footer-wrap"><div id="footer"><div id="footer-inner" class="region region-footer">
-      <?php if ($footer_links): ?>
+      <?php if ($footer_links = menu_tree('footer-links')): ?>
         <div id="footer-links" class="clear-block">
-          <?php print theme('menu_tree', menu_tree('menu-footer-links')); ?>
+          <?php print $footer_links; ?>
         </div> <!-- /#div -->
       <?php endif; ?>
 
