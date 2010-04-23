@@ -13,9 +13,9 @@
   <?php endif; ?>
 
   <?php if ($submitted): ?>
-    <div class="submitted">
+    <h4 class="meta">
       <?php print $submitted; ?>
-    </div>
+    </h4>
   <?php endif; ?>
 
   <div class="content">

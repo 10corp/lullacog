@@ -72,6 +72,9 @@ h1#site-name {
 .meta span.submitted {
   font-weight: bold;
 }
+.node .meta span {
+  font-weight: normal;
+}
 
 /* CCK link fields */
 

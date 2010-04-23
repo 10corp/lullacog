@@ -221,15 +221,21 @@ function lullacog_node_admin_nodes($form) {
  * @ingroup themeable
  */
 function lullacog_node_submitted($node, $date = NULL) {
-  $date = is_null($date) ? format_date($node->created, 'small') : $date;
+  $teaser = isset($node->teaser) && $node->teaser;
 
   $output = '';
-  if ($node->uid) {
+  if ($teaser) {
+    $date = is_null($date) ? format_date($node->created, 'small') : $date;
     $output .= '<span class="username">'. t('By !username', array('!username' => theme('username', $node))) .'</span>';
   }
+  else {
+    $date = is_null($date) ? format_date($node->created, 'medium') : $date;
+    $output .= '<span class="username">'. t('@type by !username', array('@type' => node_get_types('name', $node), '!username' => theme('username', $node))) .'</span>';
+  }
+
   $output .= '<span class="submitted">'. $date .'</span>';
 
-  if (!empty($node->teaser)) {
+  if ($teaser) {
     $path = NULL;
 
     switch ($node->type) {
@@ -247,7 +253,6 @@ function lullacog_node_submitted($node, $date = NULL) {
 
     $type = node_get_types('name', $node);
     $output .= '<span class="type">'. ($path ? l($type, $path) : $type) .'</span>';
-
     if ($node->comment_count) {
       $output .= '<span class="comments"><a href="'. url('node/'. $node->nid, array('fragment' => 'comments')) .'">'. format_plural($node->comment_count, '@count comment', '@count comments') . '</a></span>';
     }
