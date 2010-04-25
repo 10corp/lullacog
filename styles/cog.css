@@ -1,6 +1,12 @@
 /* @override http://dmgatlanta-com.webgearapp.com/sites/all/themes/webgear/cog/styles/cog.css?V */
 
 /* @group Miscellaneous */
+ul.inline li,
+div.links ul.links li {
+  display: inline;
+  margin-right: 10px;
+}
+
 div.more-link {
   text-align: left;
 }

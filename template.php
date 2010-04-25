@@ -113,17 +113,23 @@ function _lullacog_add_body_classes(&$vars) {
 
 /**
  * Override or insert variables into the node templates.
- *
- * @param $vars
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("node" in this case.)
  */
-function lullacog_preprocess_node(&$vars, $hook) {
+function lullacog_preprocess_node(&$vars) {
   if ($vars['node']->type == 'media' && module_exists('swftools') && count($vars['field_media'])) {
-    foreach($vars['field_media'] as $file) {
+    foreach ($vars['field_media'] as $file) {
       $vars['content'] .= swf($file['filepath']);
     }
+  }
+}
+
+/**
+ * Override or insert variables into views-view-unformatted.tpl.php.
+ *
+ * Add the 'clear-block' class to each row.
+ */
+function lullacog_preprocess_views_view_unformatted(&$vars) {
+  foreach ($vars['rows'] as $id => $row) {
+    $vars['classes'][$id] .= ' clear-block';
   }
 }
 
