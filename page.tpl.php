@@ -149,6 +149,12 @@
             </div> <!-- /#primary-sub -->
           <?php endif; ?>
 
+          <?php if ($secondary_links_sub): ?>
+            <div id="secondary-sub">
+              <?php print theme('links', $secondary_links_sub); ?>
+            </div> <!-- /#primary-sub -->
+          <?php endif; ?>
+
           <?php print $navbar; ?>
 
         </div></div> <!-- /#navbar-inner, /#navbar -->
