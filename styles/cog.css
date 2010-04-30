@@ -1,3 +1,5 @@
+/* @override http://lb6.lbt.me/sites/all/themes/lullabot/lullacog/styles/cog.css?F */
+
 /* @group Miscellaneous */
 ul.inline li,
 div.links ul.links li {
@@ -14,6 +16,11 @@ div.more-link a {
   font-weight: bold;
   padding-left: 9px;
   background: url(../images/icon-arrow-right.png) no-repeat 0 45%;
+}
+
+div.more-link a:hover,
+#content-area a:hover {
+  color: #222;
 }
 
 span.read-more-link {
