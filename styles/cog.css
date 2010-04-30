@@ -1,5 +1,3 @@
-/* @override http://dmgatlanta-com.webgearapp.com/sites/all/themes/webgear/cog/styles/cog.css?V */
-
 /* @group Miscellaneous */
 ul.inline li,
 div.links ul.links li {
@@ -343,12 +341,25 @@ body.section-users #content-area-inner div.profile dl table.sticky-enabled.stick
 
 #mc-embedded-subscribe-form input.required {
   font: 14px/18px Georgia, "Times New Roman", Times, serif;
-  color: #3e3e3e;
-  padding: 6px;
+  color: #6b6b6b;
+  padding: 6px 6px 6px 9px;
   max-width: 400px;
   border: 1px solid #cecece;
   border-bottom-color: #a7a7a7;
-  width: auto;
+  -webkit-border-radius: 5px;
+  width: 139px;
+}
+
+#mc-embedded-subscribe-form input.form-submit {
+  width: 90px !important;
+  height: 30px !important;
+  padding: 0;
+  margin: 0 0 0 4px;
+  border:  0;
+  text-indent: -1000em;
+  background: transparent url(../../lullamain/images/btn-subscribe.gif);
+  cursor: pointer; /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
 }
 
 #mc-embedded-subscribe-form .input-group ul li {
