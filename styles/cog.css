@@ -68,18 +68,17 @@ h1#site-name {
   text-transform: uppercase;
 }
 
-.meta span {
-  padding: 0 7px;
-  border-left: 1px solid #C4C5C7;
-}
-
 .meta span.username {
   padding-left: 0;
-  border-left: none;
   font-weight: bold;
+  padding: 0 7px;
 }
-.meta span.submitted {
+.meta span.submitted,
+.meta span.type,
+.meta span.comments {
   font-weight: bold;
+  padding: 0 7px;
+  border-left: 1px solid #C4C5C7;
 }
 .node .meta span {
   font-weight: normal;
