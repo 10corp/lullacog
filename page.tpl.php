@@ -39,7 +39,7 @@
 
     </div></div> <!-- /#header-inner, /#header -->
 
-    <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box or $primary_links or $secondary_links or $navbar) { print ' with-navbar'; } if ($primary_links_sub) ( print ' with-sublinks' ) ?>">
+    <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box or $primary_links or $secondary_links or $navbar) { print ' with-navbar'; } if ($primary_links_sub or $secondary_links_sub) ( print ' with-sublinks' ) ?>">
 
       <?php if ($top or ($section_title and $section_subtitle)): ?>
         <div id="top" class="region region-top"><div id="top-inner">
