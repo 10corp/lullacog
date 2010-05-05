@@ -447,3 +447,25 @@ div.view-mogo-users div.view-content {
 
 /* @end */
 
+/* @group Search */
+
+body.section-search h1.title {
+  margin-bottom: 8px;
+}
+
+body.section-search .box-inner h2.title {
+  margin-top: 24px;
+}
+
+.search-results dt {
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: 1px dotted #cecece;
+  font-size: 1.285em;
+  margin-bottom: 2px;
+}
+
+
+
+/* @end */
+
