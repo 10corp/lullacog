@@ -123,18 +123,6 @@
       <?php if ($search_box or $primary_links or $secondary_links or $navbar): ?>
         <div id="navbar"><div id="navbar-inner" class="region region-navbar">
 
-          <?php if ($secondary_links): ?>
-            <div id="secondary">
-              <?php print theme('links', $secondary_links); ?>
-            </div> <!-- /#secondary -->
-          <?php endif; ?>
-
-          <?php if ($search_box): ?>
-            <div id="search-wrapper">
-              <?php print $search_box; ?>
-            </div> <!-- /#search-box -->
-          <?php endif; ?>
-
           <div id="primary">
             <?php print theme('links', $primary_links); ?>
           </div> <!-- /#primary -->
@@ -153,6 +141,18 @@
             <div id="secondary-sub">
               <?php print theme('links', $secondary_links_sub); ?>
             </div> <!-- /#secondary-sub -->
+          <?php endif; ?>
+
+          <?php if ($secondary_links): ?>
+            <div id="secondary">
+              <?php print theme('links', $secondary_links); ?>
+            </div> <!-- /#secondary -->
+          <?php endif; ?>
+
+          <?php if ($search_box): ?>
+            <div id="search-wrapper">
+              <?php print $search_box; ?>
+            </div> <!-- /#search-box -->
           <?php endif; ?>
 
           <?php print $navbar; ?>
