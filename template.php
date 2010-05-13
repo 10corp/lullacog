@@ -30,6 +30,11 @@ function lullacog_init() {
   if (function_exists('follow_links_load')) {
     drupal_add_css(drupal_get_path('module', 'follow') .'/follow.css');
   }
+
+  // Add some admin css files.
+  if (user_access('access administration pages')) {
+    drupal_add_css(drupal_get_path('theme', 'lullacog') .'/styles/cog_admin.css', 'theme');
+  }
 }
 
 /**

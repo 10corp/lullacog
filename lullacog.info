@@ -10,7 +10,6 @@ base theme  = zen
 ; ------------------------------
 stylesheets[all][] = styles/reset.css
 stylesheets[all][] = styles/cog.css
-stylesheets[all][] = styles/cog_admin.css
 stylesheets[all][] = styles/messages.css
 stylesheets[screen][] = styles/forms.css
 ;stylesheets[screen][] = styles/regions.css
