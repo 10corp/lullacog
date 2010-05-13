@@ -1,7 +1,13 @@
 /* @override http://lullabot/sites/all/themes/lullabot/lullacog/styles/cog_admin.css?b */
 
+div.block {
+  position: relative;
+}
+
 div.block div.edit {
   position: absolute;
+  top: 0;
+  right: 0;
   display: none;
 }
 
