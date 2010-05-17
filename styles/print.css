@@ -24,19 +24,24 @@
 
 /* Un-float the content */
   #content,
-  #content-inner
+  #content-area,
+  #content-area-inner,
+  #content-inner,
+  #sidebar,
+  #sidebar-inner
   {
     float: none;
-    width: 100%;
+    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-  }
+  clear: both;
+}
 
 /* Turn off any background colors or images */
   body,
   #page, #page-inner,
   #main, #main-inner,
-  #content, #content-inner
+  #content, #content-inner, #sidebar
   {
     color: #000;
     background-color: transparent !important;
@@ -44,7 +49,7 @@
   }
 
 /* Hide sidebars and nav elements */
-  #skip-to-nav, #navbar, #sidebar-left, #sidebar-right, #footer,
+  #skip-to-nav, #navbar, #top, #sidebar-left, #sidebar-right, #footer,
   .breadcrumb, div.tabs, .links, .taxonomy,
   .book-navigation, .forum-topic-navigation, .pager, .feed-icons
   {
