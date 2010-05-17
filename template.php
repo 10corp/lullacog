@@ -26,11 +26,6 @@ function lullacog_init() {
     drupal_add_css($file, 'theme');
   }
 
-  // Add follow module css, since we don't use the block.
-  if (function_exists('follow_links_load')) {
-    drupal_add_css(drupal_get_path('module', 'follow') .'/follow.css');
-  }
-
   // Add some admin css files.
   if (user_access('access administration pages')) {
     drupal_add_css(drupal_get_path('theme', 'lullacog') .'/styles/cog_admin.css', 'theme');
@@ -78,7 +73,7 @@ function lullacog_preprocess_page(&$vars, $hook) {
 
   // Load up the site follow links into a var so we can hard code them in the theme.
   if (function_exists('follow_links_load') && $links = follow_links_load()) {
-    $vars['follow_site'] = theme('follow_links', $links, follow_networks_load());
+    $vars['follow_site'] = theme('follow_links', array('links' => $links, 'networks' => follow_networks_load(0)));
   }
 }
 
