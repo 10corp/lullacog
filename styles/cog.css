@@ -156,7 +156,8 @@ img.video {
   position: relative;
 }
 
-.node-unpublished .node-inner div {
+.node-unpublished .node-inner div,
+.node-unpublished .node-inner .meta {
   z-index: 10;
   position: relative;
 }
