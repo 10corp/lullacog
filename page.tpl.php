@@ -17,7 +17,7 @@
         <div id="logo-title">
 
           <?php if ($logo): ?>
-            <div id="logo"><a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo-image" /></a></div>
+            <div id="logo"><a href="<?php print $logo_url; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo-image" /></a></div>
           <?php endif; ?>
 
           <h1 id="site-name">

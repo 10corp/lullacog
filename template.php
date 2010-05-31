@@ -71,6 +71,8 @@ function lullacog_preprocess_page(&$vars, $hook) {
     $vars['logo'] = imagecache_create_url('header_logo', $vars['logo']);
   }
 
+  $vars['logo_url'] = $vars['base_path'];
+
   // Load up the site follow links into a var so we can hard code them in the theme.
   if (function_exists('follow_links_load') && $links = follow_links_load()) {
     $vars['follow_site'] = theme('follow_links', array('links' => $links, 'networks' => follow_networks_load(0)));
