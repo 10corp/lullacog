@@ -1,6 +1,6 @@
 /* @override http://lullabot/sites/all/themes/lullabot/lullacog/styles/cog_admin.css?b */
 
-div.block {
+div.block, div.view {
   position: relative;
 }
 
@@ -16,10 +16,13 @@ div.block:hover div.edit {
   display: block;
 }
 
-div.views-admin-links ul {
+div.views-admin-links {
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
+div.views-admin-links ul,
 div.views-admin-links li {
   display: inline;
 }
