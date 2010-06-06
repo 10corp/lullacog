@@ -191,6 +191,13 @@ div.views-row-last {
   margin-bottom: 0;
 }
 
+.view-header,
+.view-footer,
+.view-empty {
+  font-size: 117%;
+  color: #787878;
+}
+
 /* @end */
 
 /* @group Widgets */
@@ -432,4 +439,3 @@ body.section-search .box-inner h2.title {
 }
 
 /* @end */
-
