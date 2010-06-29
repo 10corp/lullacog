@@ -42,7 +42,6 @@ scripts[] = scripts/lullacog.js
 ; ------------------------------
 regions[header]         = Header
 regions[top]            = Top
-regions[pillars]        = Pillars
 regions[navbar]         = Navigation bar
 regions[content_top]    = Content Top
 regions[right]          = Sidebar
