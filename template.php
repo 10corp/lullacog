@@ -101,14 +101,9 @@ function _lullacog_add_body_classes(&$vars) {
     $vars['body_classes'] .= ' no-top';
   }
   
-  // Add sidebar right body class.
-  if ($vars['right']) {
-    $vars['body_classes'] .= ' sidebar-right';
-  }
-  
-  // Add sidebar left body class.
-  if ($vars['left']) {
-    $vars['body_classes'] .= ' sidebar-left';
+  // Add with-sidebar body class.
+  if ($vars['right'] || $vars['left']) {
+    $vars['body_classes'] .= ' with-sidebar';
   }
   
   // Add sidebar right body class.
