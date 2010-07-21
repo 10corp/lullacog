@@ -84,38 +84,39 @@ function lullacog_preprocess_page(&$vars, $hook) {
  * Adds some conditional body classes.
  */
 function _lullacog_add_body_classes(&$vars) {
+  $classes = array();
+  extract($vars);
+
   // Add node body class if we're on a page node.
-  if ($vars['node']) {
-    $vars['body_classes'] .= ' node-page';
+  if ($node) {
+    $classes[] = 'node-page';
   }
 
   // Add content-top body class.
-  if ($vars['content_top']) {
-    $vars['body_classes'] .= ' content-top';
-  }
-  
-  // Add top body class.
-  if ($vars['top']) {
-    $vars['body_classes'] .= ' top';
-  }
-  else {
-    $vars['body_classes'] .= ' no-top';
-  }
-  
-  // Add with-sidebar body class.
-  if ($vars['right'] || $vars['left']) {
-    $vars['body_classes'] .= ' with-sidebar';
-  }
-  
-  // Add sidebar right body class.
-  if ($vars['bottom']) {
-    $vars['body_classes'] .= ' bottom';
+  if ($content_top) {
+    $classes[] = 'content-top';
   }
 
-  // Check if region_manager is hidden 
-  if (!variable_get('webgear_region_manager_show', TRUE)) {
-    $vars['body_classes'] .= ' region-manager-hide';
+  // Add top body class.
+  if ($top) {
+    $classes[] = 'top';
   }
+  else {
+    $classes[] = 'no-top';
+  }
+
+  // Add with-sidebar body class.
+  if ($right || $left) {
+    $classes[] = 'with-sidebar';
+  }
+
+  // Add sidebar right body class.
+  if ($bottom) {
+    $classes[] = 'bottom';
+  }
+
+  $new_classes = implode(' ', $classes);
+  $vars['body_classes'] .= $vars['body_classes'] ? ' '. $new_classes : $new_classes;
 }
 
 /**
@@ -125,9 +126,9 @@ function _lullacog_add_main_classes(&$vars) {
   $classes = array('clear-block');
   extract($vars);
 
-  if ($search_box or $primary_links or $secondary_links or $navbar) { 
-    $classes[] = 'with-navbar'; 
-  } 
+  if ($search_box or $primary_links or $secondary_links or $navbar) {
+    $classes[] = 'with-navbar';
+  }
 
   if ($primary_links_sub or $secondary_links_sub) {
     $classes[] = 'with-sublinks';
