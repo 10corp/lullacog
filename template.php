@@ -45,6 +45,7 @@ function lullacog_preprocess_page(&$vars, $hook) {
   global $user;
 
   _lullacog_add_body_classes($vars);
+  _lullacog_add_main_classes($vars);
 
   // Add the primary links sub menu
   if (function_exists('context_get_plugin')) {
@@ -115,6 +116,28 @@ function _lullacog_add_body_classes(&$vars) {
   if (!variable_get('webgear_region_manager_show', TRUE)) {
     $vars['body_classes'] .= ' region-manager-hide';
   }
+}
+
+/**
+ * Add some conditional classes to $main-inner.
+ */
+function _lullacog_add_main_classes(&$vars) {
+  $classes = array('clear-block');
+  extract($vars);
+
+  if ($search_box or $primary_links or $secondary_links or $navbar) { 
+    $classes[] = 'with-navbar'; 
+  } 
+
+  if ($primary_links_sub or $secondary_links_sub) {
+    $classes[] = 'with-sublinks';
+  }
+
+  if ($breadcrumb) {
+    $classes[] = 'with-breadcrumb';
+  }
+
+  $vars['main_classes'] = implode(' ', $classes);
 }
 
 /**
