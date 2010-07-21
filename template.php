@@ -84,8 +84,8 @@ function lullacog_preprocess_page(&$vars, $hook) {
  * Adds some conditional body classes.
  */
 function _lullacog_add_body_classes(&$vars) {
-  $classes = array();
   extract($vars);
+  $classes = explode(' ', $body_classes);
 
   // Add node body class if we're on a page node.
   if ($node) {
@@ -115,8 +115,7 @@ function _lullacog_add_body_classes(&$vars) {
     $classes[] = 'bottom';
   }
 
-  $new_classes = implode(' ', $classes);
-  $vars['body_classes'] .= $vars['body_classes'] ? ' '. $new_classes : $new_classes;
+  $vars['body_classes'] = implode(' ', $classes);
 }
 
 /**
