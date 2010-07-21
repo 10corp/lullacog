@@ -268,22 +268,6 @@ body.top #sidebar-right .block .node-type-embed img {
 
 /* @end */
 
-/* @group Breadcrumbs */
-
-body.webgear-admin.section-admin div#breadcrumb_wrap {
-  display: none;
-}
-
-body.not-logged-in div#breadcrumb_wrap {
-  display: none;
-}
-
-body.admin-menu div#breadcrumb_wrap {
-  display: block !important;
-}
-
-/* @end */
-
 /* @group User section */
 
 body.section-users .field-field-name-first .field-items div.field-item,
