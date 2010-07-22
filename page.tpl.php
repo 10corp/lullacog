@@ -39,7 +39,7 @@
 
     </div></div> <!-- /#header-inner, /#header -->
 
-    <div id="main"><div id="main-inner" class="<?php print $main_classes; ?>">
+    <div id="main"><div id="main-inner" class="clear-block">
 
       <?php if ($top or ($section_title and $section_subtitle)): ?>
         <div id="top" class="region region-top"><div id="top-inner">
