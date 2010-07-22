@@ -124,7 +124,7 @@
         <div id="navbar"><div id="navbar-inner" class="region region-navbar">
 
           <div id="primary">
-            <?php print theme('links', $primary_links); ?>
+            <?php print $primary_links_html; ?>
           </div> <!-- /#primary -->
 
           <?php if ($follow_site): ?>
@@ -133,7 +133,7 @@
 
           <?php if ($secondary_links): ?>
             <div id="secondary">
-              <?php print theme('links', $secondary_links); ?>
+              <?php print $secondary_links_html; ?>
             </div> <!-- /#secondary -->
           <?php endif; ?>
 
@@ -151,9 +151,9 @@
     </div></div> <!-- /#main-inner, /#main -->
 
     <div id="footer-wrap"><div id="footer"><div id="footer-inner" class="region region-footer">
-      <?php if ($footer_links): ?>
+      <?php if ($footer_links_html): ?>
         <div id="footer-links" class="clear-block">
-          <?php print theme('links', $footer_links); ?>
+          <?php print $footer_links_html; ?>
         </div> <!-- /#div -->
       <?php endif; ?>
 
