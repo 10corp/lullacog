@@ -47,19 +47,14 @@ function lullacog_preprocess_page(&$vars, $hook) {
   _lullacog_add_body_classes($vars);
   _lullacog_add_main_classes($vars);
 
-  // Add the primary links sub menu
+  // Add the footer links
   if (function_exists('context_get_plugin')) {
     $plugin = context_get_plugin('reaction', 'menu');
-    $vars['primary_links_sub'] = $plugin->menu_navigation_links(variable_get('menu_primary_links_source', 'primary-links'), 1);
-    $vars['secondary_links_sub'] = $plugin->menu_navigation_links(variable_get('menu_secondary_links_source', 'secondary-links'), 1);  
+    $vars['footer_links'] = $plugin->menu_navigation_links('menu-footer-links');
   }
   else {
-    $vars['primary_links_sub'] = menu_navigation_links(variable_get('menu_primary_links_source', 'primary-links'), 1);
-    $vars['secondary_links_sub'] = menu_navigation_links(variable_get('menu_secondary_links_source', 'secondary-links'), 1);  
+    $vars['footer_links'] = menu_navigation_links('menu-footer-links');
   }
-  
-  // Add some footer links to the footer.
-  $vars['footer_links'] = menu_navigation_links('menu-footer-links');
 
   // Re-add the site-name. For SEO purposes, we always want the site name in a 
   // hidden h1. We can then toggle a visible site name using the $toggle_name var.
