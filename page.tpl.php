@@ -101,10 +101,10 @@
           </div> <!-- /#content-area-inner -->
 
           <?php if ($right || $left): ?>
-            <div id="sidebar"><div id="sidebar-inner" class="region region-sidebar">
+            <div id="sidebar-wrap"><div id="sidebar"><div id="sidebar-inner" class="region region-sidebar">
               <?php print $right; ?>
               <?php print $left; ?>
-            </div></div> <!-- /#sidebar-inner, /#sidebar -->
+            </div></div></div> <!-- /#sidebar-inner, /#sidebar, /#sidebar-wrap -->
           <?php endif; ?>
         </div> <!-- /#content-area -->
 
