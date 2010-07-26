@@ -113,9 +113,9 @@
         <?php endif; ?>
 
         <?php if ($bottom): ?>
-          <div id="bottom" class="region region-bottom clear-block">
+          <div id="bottom" class="region region-bottom clear-block"><div id="bottom-inner">
             <?php print $bottom; ?>
-          </div> <!-- /#bottom -->
+          </div></div> <!-- /#bottom-inner, #bottom -->
         <?php endif; ?>
 
       </div></div> <!-- /#content-inner, /#content -->
