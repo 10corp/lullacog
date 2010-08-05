@@ -1,18 +1,9 @@
-; $Id: STARTERKIT.info.txt,v 1.16.2.2 2010/06/26 16:05:31 johnalbin Exp $
+; $Id$
 
 name        = LullaCog
 description = Scaffolding theme for Lullabot.
-
-  ; The screenshot used on the admin/build/themes page.
-screenshot = screenshot.png
-
-  ; "core" specifies the version of Drupal that this theme is compatible with.
-  ; "base theme" specifies that this is a theme that uses the "zen" theme as its
-  ; base theme. Its unlikely you will ever need to change these, but they are
-  ; required fields for a Zen sub-theme. The "engine" field is not used in a
-  ; sub-theme since the engine is inherited from its base theme.
-core       = 6.x
-base theme = zen
+core        = 6.x
+base theme  = zen
 
   ; This section adds CSS files to your theme. The media type is specified in
   ; the brackets. Typical CSS media types include "all", "screen", "print", and
@@ -38,7 +29,7 @@ stylesheets[all][]   = css/block-editing.css
 stylesheets[all][]   = css/blocks.css
 stylesheets[all][]   = css/navigation.css
 stylesheets[all][]   = css/panels-styles.css
-;stylesheets[all][]   = css/views-styles.css
+stylesheets[all][]   = css/views-styles.css
 stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
@@ -47,7 +38,6 @@ stylesheets[all][]   = css/fields.css
 stylesheets[screen][] = css/tables.css
 stylesheets[screen][] = css/vertical_tabs.css
 stylesheets[print][] = css/print.css
-
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
@@ -97,9 +87,9 @@ features[] = secondary_links
   ; Set the default settings to be used in theme-settings.php
 settings[zen_block_editing]        = 1
 settings[zen_breadcrumb]           = yes
-settings[zen_breadcrumb_separator] = ' â€º '
+settings[zen_breadcrumb_separator] = ' Ý '
 settings[zen_breadcrumb_home]      = 1
 settings[zen_breadcrumb_trailing]  = 1
 settings[zen_breadcrumb_title]     = 0
-settings[zen_rebuild_registry]     = 0
+settings[zen_rebuild_registry]     = 1
 settings[zen_wireframes]           = 0

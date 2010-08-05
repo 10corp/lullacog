@@ -6,7 +6,18 @@
  * Contains theme override functions and preprocess functions for the theme.
  */
 
-lullacog_init();
+/**
+ * Implementation of HOOK_theme().
+ */
+function lullacog_theme(&$existing, $type, $theme, $path) {
+  $hooks = zen_theme($existing, $type, $theme, $path);
+  // Add your theme hooks like this:
+  /*
+  $hooks['hook_name_here'] = array( // Details go here );
+  */
+  // @TODO: Needs detailed comments. Patches welcome!
+  return $hooks;
+}
 
 /**
  * Theme is first initialized. Add some conditional stylesheets.
@@ -16,20 +27,22 @@ function lullacog_init() {
   global $theme_info;
   global $theme_path;
 
+  /*
   if (($skin = theme_get_setting('skin')) && $skin != 'default') {
-    $file = $theme_path ."/skins/$skin.css";
+    $file = $theme_path ."/css/$skin.css";
     drupal_add_css($file, 'theme');
   }
 
   if (drupal_is_front_page()) {
-    $file = $theme_path ."/styles/front.css";
+    $file = $theme_path ."/css/front.css";
     drupal_add_css($file, 'theme');
   }
 
   // Add some admin css files.
   if (user_access('access administration pages')) {
-    drupal_add_css(drupal_get_path('theme', 'lullacog') .'/styles/cog_admin.css', 'theme');
+    drupal_add_css(drupal_get_path('theme', 'lullacog') .'/css/cog_admin.css', 'theme');
   }
+  */
 }
 
 /**
@@ -44,9 +57,9 @@ function lullacog_preprocess_page(&$vars, $hook) {
   global $theme;
   global $user;
 
-  _lullacog_add_body_classes($vars);
+  //_lullacog_add_body_classes($vars);
 
-  _lullacog_process_menus($vars);
+  //_lullacog_process_menus($vars);
 
   // Re-add the site-name. For SEO purposes, we always want the site name in a 
   // hidden h1. We can then toggle a visible site name using the $toggle_name var.
@@ -71,6 +84,7 @@ function lullacog_preprocess_page(&$vars, $hook) {
  * Adds some conditional body classes.
  */
 function _lullacog_add_body_classes(&$vars) {
+  /*
   extract($vars);
   $classes = explode(' ', $body_classes);
 
@@ -113,6 +127,7 @@ function _lullacog_add_body_classes(&$vars) {
 
   // Clean out any empty values with array_filter.
   $vars['body_classes'] = implode(' ', array_filter($classes));
+  */
 }
 
 function _lullacog_process_menus(&$vars) {
@@ -136,11 +151,13 @@ function _lullacog_process_menus(&$vars) {
  * Override or insert variables into the node templates.
  */
 function lullacog_preprocess_node(&$vars) {
+  /*
   if ($vars['node']->type == 'media' && module_exists('swftools') && count($vars['field_media'])) {
     foreach ($vars['field_media'] as $file) {
       $vars['content'] .= swf($file['filepath']);
     }
   }
+  */
 }
 
 /**
@@ -148,11 +165,13 @@ function lullacog_preprocess_node(&$vars) {
  *
  * Add the 'clear-block' class to each row.
  */
+/*
 function lullacog_preprocess_views_view_unformatted(&$vars) {
   foreach ($vars['rows'] as $id => $row) {
     $vars['classes'][$id] .= ' clear-block';
   }
 }
+*/
 
 /**
  * Return a themed breadcrumb trail.
@@ -162,6 +181,7 @@ function lullacog_preprocess_views_view_unformatted(&$vars) {
  * @return
  *   A string containing the breadcrumb output.
  */
+/*
 function lullacog_breadcrumb($breadcrumb) {
   // Determine if we are to display the breadcrumb.
   $show_breadcrumb = theme_get_setting('zen_breadcrumb');
@@ -192,6 +212,7 @@ function lullacog_breadcrumb($breadcrumb) {
   // Otherwise, return an empty string.
   return '';
 }
+*/
 
 /**
  * Theme node administration overview. Moves the options to the bottom of the 
@@ -347,6 +368,7 @@ function lullacog_username($object) {
  * @param $menu
  *   Menu array from which to build the nested lists.
  */
+/*
 function lullacog_nice_menu_build($menu) {
   // Retrieve original path so we can repair it after our hack.
   $original_path = $_GET['q'];
@@ -366,5 +388,20 @@ function lullacog_nice_menu_build($menu) {
 
   menu_set_active_item($original_path);
 
+  return $output;
+}
+*/
+
+
+/**
+ * Override of theme_status_message()
+ *  Adds a wrapper div around messages
+ */
+function lullacog_status_messages($display = NULL) {
+  $output = theme_status_messages($display);
+  if ($output) {
+    $output =  '<div id="message-wrapper">' . $output . '</div>';
+  }
+  drupal_add_js(drupal_get_path('theme', 'lullacog') . '/scripts/messages.js');
   return $output;
 }

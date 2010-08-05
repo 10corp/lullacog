@@ -56,7 +56,7 @@ span.field-suffix {
 }
 
 h1#site-name {
-  display: none;
+  /*display: none;*/
 }
 
 /* Generic node theming */

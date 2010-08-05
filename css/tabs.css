@@ -1,0 +1,121 @@
+
+
+/* @group Tabs */
+
+#content-header div.tabs {
+  margin: 0;
+  padding: 0;
+}
+
+#content-header ul.primary {
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  display: block;
+  padding: 0;
+  background: #535353 url(../images/bg_tabs.gif) repeat-x 0 bottom;
+}
+
+#content-header ul.primary li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#content-header ul.primary li a {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: #ececec;
+  text-transform: uppercase;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  height: 32px;
+  border: 1px solid #535353;
+  background: #535353 url(../images/bg_tabs.gif) repeat-x 0 top;
+  border-right-color: #808080;
+  font: normal normal 11px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+#content-header ul.primary li a span.tab {
+    margin: 0;
+  padding: 0;
+  background-image: none;
+  line-height: 32px;
+  height: 32px;
+  display: block;
+}
+
+#content-header ul.primary li a:hover {
+  
+}
+
+#content-header ul.primary li a:hover .tab {
+  color: white;
+}
+
+#content-header ul.primary li.active a.active,
+#content-header ul.primary li a:hover {
+  background: url(../images/bg_tabs-hover.gif) repeat-x 0 bottom;
+  color: white;
+}
+
+#content-header ul.secondary {
+  list-style: none;
+  white-space: nowrap;
+  border-top: 3px solid #272727;
+  display: block;
+  border-bottom-width: 0;
+  padding: 0;
+  margin: 0;
+  background: #535353 url(../images/bg_tabs.gif) repeat-x 0 bottom;
+}
+
+#content-header ul.secondary li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#content-header ul.secondary li a {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: #ececec;
+  text-transform: uppercase;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  height: 32px;
+  border: 1px solid #535353;
+  background: #535353 url(../images/bg_tabs-hover.gif) repeat-x 0 top;
+  border-right-color: #272727;
+  border-top-width: 0;
+  font: normal normal 11px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+#content-header ul.secondary li a span.tab {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  line-height: 32px;
+  height: 32px;
+  display: block;
+}
+
+#content-header ul.secondary li a:hover {
+  
+}
+
+#content-header ul.secondary li a:hover .tab {
+  color: white;
+}
+
+#content-header ul.secondary li.active a.active,
+#content-header ul.secondary li a:hover {
+  background: #272727 none repeat-x 0 bottom;
+  color: white;
+}
+
+/* @end */
