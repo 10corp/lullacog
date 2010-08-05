@@ -160,6 +160,10 @@ function lullacog_preprocess_node(&$vars) {
   */
 }
 
+function lullacog_preprocess_block(&$vars) {
+  $vars['classes'] = is_array($vars['classes_array']) ? implode(' ', $vars['classes_array']) : '';
+}
+
 /**
  * Override or insert variables into views-view-unformatted.tpl.php.
  *
