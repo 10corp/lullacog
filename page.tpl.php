@@ -10,7 +10,7 @@
 </head>
 <body class="<?php print $body_classes; ?>"><?php if (!empty($admin)) print $admin; ?>
 
-  <div id="page"><div id="page-inner">
+  <div id="page"><?php print $messages; ?><div id="page-inner">
     <div id="header"><div id="header-inner" class="clear-block">
 
       <?php if ($logo or $site_name or $site_slogan): ?>
@@ -80,9 +80,8 @@
               </div></div> <!-- /#content-top-inner, /#content-top -->
             <?php endif; ?>
 
-            <?php if ($title or $tabs or $help or $messages): ?>
+            <?php if ($title or $tabs or $help): ?>
               <div id="content-header">
-                <?php print $messages; ?>
                 <?php if ($title): ?>
                   <h1 class="title"><?php print $title; ?></h1>
                 <?php endif; ?>

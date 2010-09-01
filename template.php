@@ -368,3 +368,16 @@ function lullacog_nice_menu_build($menu) {
 
   return $output;
 }
+
+/**
+ * Override of theme_status_message()
+ *  Adds a wrapper div around messages
+ */
+function lullacog_status_messages($display = NULL) {
+  $output = theme_status_messages($display);
+  if ($output) {
+    $output =  '<div id="message-wrapper">' . $output . '</div>';
+  }
+  drupal_add_js(drupal_get_path('theme', 'lullacog') . '/scripts/messages.js');
+  return $output;
+}
