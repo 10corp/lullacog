@@ -11,11 +11,11 @@ base theme  = zen
 stylesheets[all][] = styles/reset.css
 stylesheets[all][] = styles/cog.css
 stylesheets[all][] = styles/messages.css
-stylesheets[screen][] = styles/forms.css
-;stylesheets[screen][] = styles/regions.css
-stylesheets[screen][] = styles/tables.css
-stylesheets[screen][] = styles/tabs.css
-stylesheets[screen][] = styles/vertical_tabs.css
+stylesheets[all][] = styles/forms.css
+;stylesheets[all][] = styles/regions.css
+stylesheets[all][] = styles/tables.css
+stylesheets[all][] = styles/tabs.css
+stylesheets[all][] = styles/vertical_tabs.css
 stylesheets[print][]  = styles/print.css
 
 ; ------------------------------
