@@ -130,6 +130,18 @@
             <div id="follow-site"><?php print $follow_site; ?></div>
           <?php endif; ?>
 
+          <?php if (!empty($primary_links_sub_html)): ?>
+            <div id="primary-sub">
+              <?php print $primary_links_sub_html; ?>
+            </div> <!-- /#primary-sub -->
+          <?php endif; ?>
+
+          <?php if (!empty($secondary_links_sub_html)): ?>
+            <div id="secondary-sub">
+              <?php print $secondary_links_sub_html; ?>
+            </div> <!-- /#secondary-sub -->
+          <?php endif; ?>
+
           <?php if ($secondary_links): ?>
             <div id="secondary">
               <?php print $secondary_links_html; ?>

@@ -119,16 +119,22 @@ function _lullacog_process_menus(&$vars) {
   // Add the footer links
   if (function_exists('context_get_plugin')) {
     $plugin = context_get_plugin('reaction', 'menu');
+    $vars['primary_links_sub'] = $plugin->menu_navigation_links(variable_get('menu_primary_links_source', 'primary-links'), 1);
+    $vars['secondary_links_sub'] = $plugin->menu_navigation_links(variable_get('menu_secondary_links_source', 'secondary-links'), 1);
     $vars['footer_links'] = $plugin->menu_navigation_links('menu-footer-links');
   }
   else {
+    $vars['primary_links_sub'] = menu_navigation_links(variable_get('menu_primary_links_source', 'primary-links'), 1);
+    $vars['secondary_links_sub'] = menu_navigation_links(variable_get('menu_secondary_links_source', 'secondary-links'), 1);
     $vars['footer_links'] = menu_navigation_links('menu-footer-links');
   }
 
-  $menus = array('primary_links', 'secondary_links', 'footer_links');
+  $menus = array('primary_links', 'primary_links_sub', 'secondary_links', 'secondary_links_sub', 'footer_links');
 
   foreach ($menus as $menu_name) {
-    $vars[$menu_name .'_html'] = theme('links', $vars[$menu_name]);
+    if (isset($vars[$menu_name])) {
+      $vars[$menu_name .'_html'] = theme('links', $vars[$menu_name]);
+    }
   }
 }
 
