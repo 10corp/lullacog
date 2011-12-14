@@ -162,9 +162,9 @@
     </div></div> <!-- /#main-inner, /#main -->
 
     <div id="footer-wrap"><div id="footer"><div id="footer-inner" class="region region-footer">
-      <?php if ($footer_links_html): ?>
+      <?php if ($footer_links_tree): ?>
         <div id="footer-links" class="clear-block">
-          <?php print $footer_links_html; ?>
+          <?php print $footer_links_tree; ?>
         </div> <!-- /#div -->
       <?php endif; ?>
 

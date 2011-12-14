@@ -136,6 +136,9 @@ function _lullacog_process_menus(&$vars) {
       $vars[$menu_name .'_html'] = theme('links', $vars[$menu_name]);
     }
   }
+
+  // Also set up a full tree menu for the footer links.
+  $vars['footer_links_tree'] = menu_tree('footer-links');
 }
 
 /**
