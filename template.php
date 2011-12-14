@@ -121,12 +121,12 @@ function _lullacog_process_menus(&$vars) {
     $plugin = context_get_plugin('reaction', 'menu');
     $vars['primary_links_sub'] = $plugin->menu_navigation_links(variable_get('menu_primary_links_source', 'primary-links'), 1);
     $vars['secondary_links_sub'] = $plugin->menu_navigation_links(variable_get('menu_secondary_links_source', 'secondary-links'), 1);
-    $vars['footer_links'] = $plugin->menu_navigation_links('menu-footer-links');
+    $vars['footer_links'] = $plugin->menu_navigation_links('footer-links');
   }
   else {
     $vars['primary_links_sub'] = menu_navigation_links(variable_get('menu_primary_links_source', 'primary-links'), 1);
     $vars['secondary_links_sub'] = menu_navigation_links(variable_get('menu_secondary_links_source', 'secondary-links'), 1);
-    $vars['footer_links'] = menu_navigation_links('menu-footer-links');
+    $vars['footer_links'] = menu_navigation_links('footer-links');
   }
 
   $menus = array('primary_links', 'primary_links_sub', 'secondary_links', 'secondary_links_sub', 'footer_links');
